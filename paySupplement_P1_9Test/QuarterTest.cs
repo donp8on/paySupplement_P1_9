@@ -24,5 +24,12 @@ namespace paySupplement_P1_9Test
             Assert.True(q1 < q2);
             Assert.True(q2 > q1);
         }
+
+        [Fact]
+        public void QuarterRange()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Quarter(-0.1));
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Quarter(1.1));
+        }
     }
 }
