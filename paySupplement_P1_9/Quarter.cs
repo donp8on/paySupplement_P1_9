@@ -16,5 +16,12 @@ namespace paySupplement_P1_9
         }
 
         private int GetQuarter() => (int)(Value * 4);
+
+        public static bool operator ==(Quarter a, Quarter b) => a.GetQuarter() == b.GetQuarter();
+        public static bool operator !=(Quarter a, Quarter b) => !(a == b);
+        public static bool operator >(Quarter a, Quarter b) => a.Value > b.Value;
+        public static bool operator <(Quarter a, Quarter b) => a.Value < b.Value;
+        public static bool operator >=(Quarter a, Quarter b) => a.Value >= b.Value;
+        public static bool operator <=(Quarter a, Quarter b) => a.Value <= b.Value;
     }
 }
