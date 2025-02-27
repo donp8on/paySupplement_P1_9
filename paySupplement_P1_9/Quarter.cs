@@ -6,6 +6,9 @@ namespace paySupplement_P1_9
 {
     public class Quarter
     {
+        /// <summary>
+        /// This gets the value of the quarter.
+        /// </summary>
         public double Value { get; }
 
         public Quarter(double value)
