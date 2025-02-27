@@ -11,6 +11,11 @@ namespace paySupplement_P1_9
         /// </summary>
         public double Value { get; }
 
+        /// <summary>
+        /// This is the constructor for the Quarter class.
+        /// </summary>
+        /// <param name="value"> Value is a double that is between 0.0 and 1.0.</param>
+        /// <exception cref="ArgumentOutOfRangeException">Throws an exception if the value is not in the range [0.0, 1.0).</exception>
         public Quarter(double value)
         {
             if (value < 0.0 || value >= 1.0)
