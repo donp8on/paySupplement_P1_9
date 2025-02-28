@@ -25,6 +25,9 @@ namespace paySupplement_P1_9
 
         private int GetQuarter() => (int)(Value * 4);
 
+        /// <summary>
+        /// Determines if two Quarter values belong to the same quarter.
+        /// </summary>
         public static bool operator ==(Quarter a, Quarter b) => a.GetQuarter() == b.GetQuarter();
         public static bool operator !=(Quarter a, Quarter b) => !(a == b);
         public static bool operator >(Quarter a, Quarter b) => a.Value > b.Value;
