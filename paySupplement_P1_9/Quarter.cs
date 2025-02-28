@@ -49,6 +49,10 @@ namespace paySupplement_P1_9
         /// Determines if one quarter is greather than or equal to the other quater.
         /// </summary>
         public static bool operator >=(Quarter a, Quarter b) => a.Value >= b.Value;
+
+        /// <summary>
+        /// Determines if one quarter is less than or equal to the other quater.
+        /// </summary>
         public static bool operator <=(Quarter a, Quarter b) => a.Value <= b.Value;
     }
 }
