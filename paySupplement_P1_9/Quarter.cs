@@ -34,6 +34,10 @@ namespace paySupplement_P1_9
         /// Determines if two Quarter values belong to different operators.
         /// </summary>
         public static bool operator !=(Quarter a, Quarter b) => !(a == b);
+
+        /// <summary>
+        /// Determines if one quarter is greater than the other quater.
+        /// </summary>
         public static bool operator >(Quarter a, Quarter b) => a.Value > b.Value;
         public static bool operator <(Quarter a, Quarter b) => a.Value < b.Value;
         public static bool operator >=(Quarter a, Quarter b) => a.Value >= b.Value;
